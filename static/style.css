@@ -1,0 +1,45 @@
+
+body {
+    background-color: #1c1f2a; /* Dark background */
+    color: #fff; /* White text */
+}
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #2a2f3d; /* Slightly lighter dark background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.form-control {
+    background-color: #1c1f2a; /* Dark input background */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* White text in inputs */
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #28a745; /* Green border on focus */
+}
+.btn-login {
+    background-color: #1fa347; /* Green button background */
+    border: none;
+    border-radius: 5px;
+}
+.btn-login:hover {
+    background-color: #17a038; /* Darker green on hover */
+}
+.language-switcher {
+    margin-top: 20px;
+    text-align: center;
+}
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.toggle-container .form-check-input {
+    width: 50px;
+    height: 25px;
+}

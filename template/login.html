@@ -1,0 +1,29 @@
+{%extends "base.html"%}
+{%block title%}Login Page{%endblock%}
+{%block content%}
+    <div class="login-container">
+        <h2 class="text-center">Library Login</h2>
+        <form method="POST">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <div class="input-group">
+                    <input type="password" class="form-control" id="password" name="password" ="Password">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="fa-regular fa-eye"></i> 
+                    </button>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-login btn-block w-100">Login</button>
+            {%if error%}
+                    <small>{{error}}</small>
+                    {%endif%}
+                    
+            
+            
+        </form>
+    </div>
+{%endblock%}
